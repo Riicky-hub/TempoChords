@@ -1,0 +1,173 @@
+body {
+  background-color: #1e1d1b;
+}
+
+.header {
+  height: 100px;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+.header__back {
+  position: absolute;
+}
+.header__back button {
+  padding: 8px 14px;
+  background-color: transparent;
+  border: 3px solid #f5f5f5;
+  color: #f5f5f5;
+  border-radius: 100%;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.header__back button:hover {
+  border-color: #1e1d1b;
+  background-color: #f5f5f5;
+  color: #1e1d1b;
+}
+.header h3 {
+  margin: 0;
+  text-align: center;
+}
+.header__title {
+  text-decoration: none;
+  font-size: 2.6rem;
+  color: #f5f5f5;
+}
+.header__title:hover {
+  color: #f5f5f5;
+}
+
+.section__box {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+}
+
+.temporizador {
+  text-align: center;
+  border-bottom: 3px solid #1e1d1b;
+}
+.temporizador__relogio {
+  font-size: 2.6rem;
+  padding: 15px;
+}
+.temporizador__btns {
+  padding-bottom: 20px;
+}
+.temporizador__btns--btn {
+  background-color: #1e1d1b;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  color: #f5f5f5;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin-bottom: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.temporizador__btns--btn:hover {
+  background-color: #f5f5f5;
+  color: #1e1d1b;
+  border-color: #1e1d1b;
+}
+.temporizador__btns--add {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.temporizador__btns--add label {
+  margin: 0 10px;
+  font-size: 1.125rem;
+}
+.temporizador__btns--add #chords {
+  width: 15%;
+  height: 30px;
+}
+.temporizador__btns--add .addChords {
+  border-radius: 2px 7px 7px 2px;
+  font-size: 0.9rem;
+  color: #f5f5f5;
+  background-color: #527852;
+  height: 30px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+.temporizador__btns--add .addChords:hover {
+  background-color: #3c941c;
+}
+
+.table {
+  padding: 10px 0;
+}
+.table__chords {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.table__chords h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  display: block;
+}
+.table__chords table {
+  text-align: center;
+}
+.table__chords table th, .table__chords table td {
+  padding: 4px 15px;
+  border: 1px solid black;
+}
+.table__chords table .tableGood {
+  background-color: #3ed12d;
+}
+.table__chords table .tableMid {
+  background-color: #ffbb3d;
+}
+.table__chords table .tableBad {
+  background-color: #c92f2f;
+}
+
+.lista {
+  text-align: center;
+  padding: 10px 0 15px 0;
+}
+.lista__title {
+  font-size: 1.5rem;
+}
+.lista__list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lista__list--item {
+  list-style-type: none;
+  padding: 10px 0 0 0;
+  margin: 2px;
+}
+.lista__list--item p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.item--good {
+  background-color: #3ed12d;
+  padding: 7px 30px;
+  border-radius: 20px;
+}
+
+.item--mid {
+  background-color: #ffbb3d;
+  padding: 7px 30px;
+  border-radius: 20px;
+}
+
+.item--bad {
+  background-color: #c92f2f;
+  padding: 7px 30px;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

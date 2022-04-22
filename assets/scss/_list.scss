@@ -1,0 +1,37 @@
+.lista {
+    text-align: center;
+    padding: 10px 0 15px 0;
+    &__title {
+        font-size: $fontSize-Medium;
+    }
+    &__list {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--item {
+            list-style-type: none;
+            padding: 10px 0 0 0;
+            margin: 2px;
+            p {
+                margin: 0;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.item--good {
+    background-color: $colorGood;
+    padding:7px 30px;
+    border-radius: 20px;
+}
+.item--mid {
+    background-color: $colorMid;
+    padding:7px 30px;
+    border-radius: 20px;
+}
+.item--bad {
+    background-color: $colorBad;
+    padding:7px 30px;
+    border-radius: 20px;
+}

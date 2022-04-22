@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TempoChords</title>
+        <link rel="shortcut icon" href="./assets/img/icons/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__back">
+                <a href=""><button><i class="fa-solid fa-right-from-bracket"></i></button></a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h3><a href="#" class="header__title"><i class="fa-solid fa-guitar"></i> TempoChords</a></h3>
+                </div>
+            </div>
+        </header>
+        <section class="section">
+            <div class="container">
+                <div class="section__box">
+                    <div class="temporizador">
+                        <h2 class="temporizador__relogio">00:00</h2>
+                        <div class="temporizador__btns">
+                            <button class="temporizador__btns--btn">Começar</button>
+                            <button class="temporizador__btns--btn">Pausar</button>
+                            <button class="temporizador__btns--btn">Reiniciar</button>
+                            <div class="temporizador__btns--add">
+                                <label for="chords">Quantos acordes?</label>
+                                <input type="text" id="chords">
+                                <button class="addChords">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="table">
+                        <div class="container">
+                            <div class="table__chords">
+                                <h2>Tabela</h2>
+                                <table>
+                                    <tr>
+                                        <th>Status</th>
+                                        <th>Time</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Ótimo</td>
+                                        <td class="tableGood">50 &gt; 70</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Médio</td>
+                                        <td class="tableMid">30 &gt; 49</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ruim</td>
+                                        <td class="tableBad">1 &gt; 29</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="lista">
+                        <div class="container">
+                            <div class="lista__title">
+                                <h2>Resultado</h2>
+                            </div>
+                            <ul class="lista__list">
+                                <li class="lista__list--item item--good"><p>Seu resultado foi 'numeroInput' acordes em 1 minuto: Parabéns</p></li>
+                                <li class="lista__list--item item--mid"><p>Seu resultado foi 'numeroInput' acordes em 1 minuto: Continue praticando</p></li>
+                                <li class="lista__list--item item--bad"><p>Seu resultado foi 'numeroInput' acordes em 1 minuto: Precisa de mais prática</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://kit.fontawesome.com/efde86963f.js" crossorigin="anonymous"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

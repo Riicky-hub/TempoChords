@@ -1,0 +1,60 @@
+.section {
+    &__box {
+        width: 100%;
+        background-color: $white;
+        border-radius: 15px;
+    }
+}
+
+.temporizador {
+    text-align: center;
+    border-bottom: 3px solid $backgroundColor-Main;
+    &__relogio {
+        font-size: $fontSize-extraBig;
+        padding: 15px;
+    }
+    &__btns {
+        padding-bottom: 20px;
+        &--btn {
+            background-color: $backgroundColor-Main;
+            border: 3px solid transparent;
+            border-radius: 20px;
+            color: $white;
+            font-weight: bold;
+            padding: 5px 12px;
+            margin-bottom: 10px;
+            transition: $transition;
+            &:hover {
+                background-color: $white;
+                color: $backgroundColor-Main;
+                border-color: $backgroundColor-Main;
+            }
+        }
+        &--add {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            label {
+                margin: 0 10px;
+                font-size: $fontSize-Low;
+            }
+            #chords {
+                width: 15%;
+                height: 30px;
+            }
+            .addChords {
+                border-radius: 2px 7px 7px 2px;
+                font-size: 0.9rem;
+                color: $white;
+                background-color: rgb(82, 120, 82);
+                height: 30px;
+                border: none;
+                transition: $transition;
+                &:hover {
+                    background-color: rgb(60, 148, 28);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.table {
+    padding: 10px 0;
+    &__chords {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            text-align: center;
+            font-size: $fontSize-Medium;
+            display: block;
+        }
+        table {
+            text-align: center;
+            th, td {
+                padding: 4px 15px;
+                border: 1px solid black;
+            }
+            .tableGood {
+                background-color: $colorGood;
+            }
+            .tableMid {
+                background-color: $colorMid;
+            }
+            .tableBad {
+                background-color: $colorBad;
+            }
+        }
+    }
+}
