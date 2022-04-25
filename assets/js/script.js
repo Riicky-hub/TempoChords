@@ -12,8 +12,6 @@
             if(segundo === 60) {
                 segundo = 0;
                 minuto++;
-            }
-            if(minuto === 1) {
                 clearInterval(timer);
                 relogio.classList.add('tempOneMinute');
             }
