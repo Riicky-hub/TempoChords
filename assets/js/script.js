@@ -1,3 +1,4 @@
+// Temporizador
 (function() {
     const data = new Date;
     let minuto = data.getMinutes;
@@ -44,4 +45,66 @@
             relogio.classList.remove('tempPause');
         }
     })
+})();
+// Resultados
+(function() {
+    const input = document.querySelector('input#chords');
+    const btn = document.querySelector('button.addChords');
+    const ul = document.querySelector('ul.lista__list');
+    
+    function criaDiv() {
+        const divList = document.createElement('div');
+        divList.classList.add('lista__list--div')
+        return divList;
+    }
+    function criaEl() {
+        let elResultado = document.createElement('li');
+        return elResultado;
+    }
+    function criaBtn() {
+        const deleteBtn = document.createElement('i');
+        deleteBtn.classList.add('fa-solid', 'fa-circle-minus', 'btnDelete');
+        return deleteBtn;
+    }
+    const criaResultado = function() {
+        const resultado = input.value;
+        const el = criaEl();
+        const btn = criaBtn();
+        const div = criaDiv();
+        ul.appendChild(div);
+        div.appendChild(el);
+        div.appendChild(btn);
+        if(resultado <= 29) {
+            el.innerHTML = `Seu resultado foi ${resultado} acordes em 1 minuto: Precisa de mais prática`;
+            el.classList.add('lista__list--item', 'item--bad');
+        }
+        if(resultado <= 49) {
+            el.innerHTML = `Seu resultado foi ${resultado} acordes em 1 minuto: Continue praticando`;
+            el.classList.add('lista__list--item', 'item--mid');
+        }
+        if(resultado > 50) {
+            el.innerHTML = `Seu resultado foi ${resultado} acordes em 1 minuto: Parabéns`;
+            el.classList.add('lista__list--item', 'item--good');
+        }
+        if(resultado < 1 || resultado > 90) {
+            el.innerHTML = `Por favor, coloque um número válido`;
+            el.classList.add('lista__list--item', 'item--null');
+        }
+    }
+    btn.addEventListener('click', () => {
+        criaResultado();
+        input.value = '';
+    });
+    input.addEventListener('keypress', function(e) {
+        if(e.keyCode === 13) {
+            criaResultado();
+            input.value = '';
+        }
+    })
+    document.body.addEventListener('click', (e) => {
+        const clicked = e.target;
+        if(e.target.classList.contains('btnDelete')) {
+            clicked.parentElement.remove();
+        }
+    });
 })();

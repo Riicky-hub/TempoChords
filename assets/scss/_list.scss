@@ -9,6 +9,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        &--div {
+            display: flex;
+            align-items: center;
+        }
         &--item {
             list-style-type: none;
             padding: 10px 0 0 0;
@@ -24,14 +28,29 @@
     background-color: $colorGood;
     padding:7px 30px;
     border-radius: 20px;
+    font-weight: bold;
 }
 .item--mid {
     background-color: $colorMid;
     padding:7px 30px;
     border-radius: 20px;
+    font-weight: bold;
 }
 .item--bad {
     background-color: $colorBad;
     padding:7px 30px;
     border-radius: 20px;
+    font-weight: bold;
+}
+.item--null {
+    background-color: $colorNull;
+    padding:7px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.btnDelete {
+    color: $colorBad;
+    cursor: pointer;
+    font-size: $fontSize-Medium;
+    margin-left: 5px;
 }

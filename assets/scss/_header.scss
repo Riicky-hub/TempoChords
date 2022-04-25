@@ -35,3 +35,8 @@
         }
     }
 }
+@media only screen and (max-width: 550px) {
+    .header__back {
+        display: none;
+    }
+}
