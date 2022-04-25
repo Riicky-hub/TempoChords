@@ -99,6 +99,14 @@ body {
   background-color: #3c941c;
 }
 
+.tempOneMinute {
+  color: #3ed12d;
+}
+
+.tempPause {
+  color: #c92f2f;
+}
+
 .table {
   padding: 10px 0;
 }
