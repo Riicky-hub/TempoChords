@@ -1,3 +1,6 @@
+// Bootstrap(Popper)
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 // Temporizador
 (function() {
     const data = new Date;
@@ -5,7 +8,7 @@
     let segundo = data.getSeconds;
     const relogio = document.querySelector('h2.temporizador__relogio');
     minuto = 0;
-    segundo = 0;
+    segundo = 50;
 
     function iniciaRelogio() {
         timer = setInterval(function() {
@@ -51,7 +54,7 @@
     const input = document.querySelector('input#chords');
     const btn = document.querySelector('button.addChords');
     const ul = document.querySelector('ul.lista__list');
-    
+    const relogio = document.querySelector('h2.temporizador__relogio');
     function criaDiv() {
         const divList = document.createElement('div');
         divList.classList.add('lista__list--div')
@@ -86,14 +89,14 @@
             el.innerHTML = `Seu resultado foi ${resultado} acordes em 1 minuto: Parabéns`;
             el.classList.add('lista__list--item', 'item--good');
         }
-        if(resultado < 1 || resultado > 90) {
+        if(resultado < 1 || resultado > 110) {
             el.innerHTML = `Por favor, coloque um número válido`;
             el.classList.add('lista__list--item', 'item--null');
         }
     }
     btn.addEventListener('click', () => {
-        criaResultado();
-        input.value = '';
+            criaResultado();
+            input.value = '';
     });
     input.addEventListener('keypress', function(e) {
         if(e.keyCode === 13) {

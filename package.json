@@ -1,15 +1,16 @@
 {
   "name": "Temporizador",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Temporizador para números de acordes feitos",
+  "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass ./assets/scss/style.scss ./assets/css/style.css --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "Riicky-hub",
   "license": "ISC",
   "dependencies": {
+    "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.1.3"
   }
 }
